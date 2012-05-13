@@ -1,0 +1,5 @@
+These .emacs.d works fine with Emacs-pretest-24.0.95-universal-10.6.8.dmg. 
+
+Downloaded from http://emacsformacosx.com/emacs-builds/Emacs-pretest-24.0.96-universal-10.6.8.dmg
+
+using emacs 24 package manager. starter-kit-ruby, rinari, js2, js-comint,auto-complete. rsense is broken. run-js working with js-comint
