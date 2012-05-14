@@ -25,12 +25,17 @@
                       js2-mode
                       js-comint
                       rinari
+                      starter-kit-lisp
+                      starter-kit-bindings
                       auto-complete
                       haml-mode
                       apache-mode
                       crontab-mode
                       puppet-mode
-                      memory-usage)
+                      memory-usage
+                      clojure-mode
+                      clojure-test-mode
+                      clojurescript-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p custom-packages)
