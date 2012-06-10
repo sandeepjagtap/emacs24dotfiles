@@ -27,6 +27,7 @@
                       rinari
                       starter-kit-lisp
                       starter-kit-bindings
+                      fuzzy
                       auto-complete
                       haml-mode
                       apache-mode
