@@ -56,18 +56,18 @@
 			    ))
 
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-1.4/dict")
 (ac-config-default)
 
 ;;rsense not working with emacs24 test beta
-;;(setq rsense-home  (expand-file-name "~/.emacs.d/libs/rsense-0.3"))
-;;(add-to-list 'load-path (concat rsense-home "/etc"))
-;;(require 'rsense)
+(setq rsense-home  (expand-file-name "~/.emacs.d/libs/rsense-0.3"))
+(add-to-list 'load-path (concat rsense-home "/etc"))
+(require 'rsense)
 
 ;; Complete by C-c .
-;;(add-hook 'ruby-mode-hook
-;;          (lambda ()
-;;            (local-set-key (kbd "C-c .") 'ac-complete-rsense)))
+(add-hook 'ruby-mode-hook
+          (lambda ()
+            (local-set-key (kbd "C-c .") 'ac-complete-rsense)))
 
 
 
