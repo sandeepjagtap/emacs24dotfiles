@@ -78,5 +78,8 @@
 (require 'grep-a-lot)
 (grep-a-lot-setup-keys)
 
+;;Path to gs(ghost script) to get view pdf work in emacs
+(setq exec-path (append exec-path '("/opt/local/bin")))
+
 (set-frame-position (selected-frame) 0 0)
 ;;(set-frame-size (selected-frame) 50000 50000)
