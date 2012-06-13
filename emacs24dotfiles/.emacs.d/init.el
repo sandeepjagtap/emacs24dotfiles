@@ -36,7 +36,8 @@
                       memory-usage
                       clojure-mode
                       clojure-test-mode
-                      clojurescript-mode)
+                      clojurescript-mode
+                      ac-slime)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p custom-packages)
@@ -59,6 +60,12 @@
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-1.4/dict")
 (ac-config-default)
+
+;;autocomplete for clojure
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+(eval-after-load "auto-complete"
+  '(add-to-list 'ac-modes 'slime-repl-mode))
 
 ;;rsense not working with emacs24 test beta
 (setq rsense-home  (expand-file-name "~/.emacs.d/libs/rsense-0.3"))
