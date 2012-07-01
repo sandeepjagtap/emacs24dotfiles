@@ -25,6 +25,8 @@
                       js2-mode
                       js-comint
                       rinari
+                      yaml-mode
+                      ruby-test-mode
                       starter-kit-lisp
                       starter-kit-bindings
                       fuzzy
