@@ -31,6 +31,7 @@
                       starter-kit-bindings
                       fuzzy
                       auto-complete
+                      etags-select
                       haml-mode
                       apache-mode
                       crontab-mode
