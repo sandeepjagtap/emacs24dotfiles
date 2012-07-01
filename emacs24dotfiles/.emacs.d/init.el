@@ -32,6 +32,7 @@
                       fuzzy
                       auto-complete
                       etags-select
+                      twittering-mode
                       haml-mode
                       apache-mode
                       crontab-mode
