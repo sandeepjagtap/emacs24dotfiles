@@ -33,6 +33,7 @@
                       auto-complete
                       etags-select
                       twittering-mode
+                      grep-a-lot
                       haml-mode
                       apache-mode
                       crontab-mode
@@ -83,8 +84,8 @@
 
 
 
-(setq vendor-dir (concat (expand-file-name "~/.emacs.d") "/vendor"))
-(add-to-list 'load-path vendor-dir)
+;;(setq vendor-dir (concat (expand-file-name "~/.emacs.d") "/vendor"))
+;;(add-to-list 'load-path vendor-dir)
 
 (require 'grep-a-lot)
 (grep-a-lot-setup-keys)
