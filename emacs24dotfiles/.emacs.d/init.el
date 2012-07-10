@@ -32,6 +32,7 @@
                       fuzzy
                       auto-complete
                       etags-select
+                      idle-highlight
                       twittering-mode
                       grep-a-lot
                       haml-mode
@@ -94,4 +95,7 @@
 (setq exec-path (append exec-path '("/opt/local/bin")))
 
 (set-frame-position (selected-frame) 0 0)
-;;(set-frame-size (selected-frame) 50000 50000)
+(desktop-save-mode 1)
+
+
+
