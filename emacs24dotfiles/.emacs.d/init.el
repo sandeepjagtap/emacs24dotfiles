@@ -7,10 +7,11 @@
 
 (require 'package)
 
+
 ;;following line for elpa package needs to be uncommented to get rinari package working
 ;;(add-to-list 'package-archives '("elpa" . "http://tromey.com/elpa/"))
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
 
 (package-initialize)
 
@@ -24,7 +25,6 @@
                       ruby-block
                       js2-mode
                       js-comint
-                      rinari
                       yaml-mode
                       ruby-test-mode
                       starter-kit-lisp
@@ -43,7 +43,9 @@
                       clojure-mode
                       clojure-test-mode
                       clojurescript-mode
-                      ac-slime)
+                      ac-slime
+                      rinari
+                      nrepl)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p custom-packages)
@@ -54,7 +56,9 @@
 
 (setq js-rhino-path (concat "java -jar " (expand-file-name "~/.emacs.d/libs/rhinojs.jar")))
 
-(setq inferior-js-program-command  js-rhino-path)
+;;(setq inferior-js-program-command  js-rhino-path)
+(setq inferior-js-program-command  "/Users/sandeep/.nvm/v0.8.18/bin/node --interactive")
+
 (add-hook 'js2-mode-hook '(lambda () 
 			    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
 			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
